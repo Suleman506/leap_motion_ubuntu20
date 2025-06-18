@@ -4,6 +4,8 @@ Step 1: Install docker on ubuntu 20.04.
 Step 2: Clone this repository to get the docker file.
 Step 3: Build the docker file
 ```
+cd leap_motion_ubuntu20
+git clone https://github.com/ultraleap/leapc-python-bindings.git
 sudo docker build -t leapmotion -f leap.Dockerfile .
 ```
 Step 4: Connect the leap motion conroller 2 with PC via USB cable. Open three terminals and execute the commands below one by one 
