@@ -1,7 +1,15 @@
 # leap_motion_ubuntu20
 Run Leap motion controller 2 on Ubuntu 20 via docker
 Step 1: Install docker on ubuntu 20.04.
-Step 2: Clone this repository to get the docker file.
+```
+https://docs.docker.com/engine/install/ubuntu/
+```
+Step 2: Clone this repository to get the docker file and also leapc python binding if you are intrested in python control.
+```
+git clone https://github.com/sulemank137/leap_motion_ubuntu20.git
+cd leap_motion_ubuntu20
+git clone https://github.com/ultraleap/leapc-python-bindings.git
+```
 Step 3: Build the docker file
 ```
 cd leap_motion_ubuntu20
@@ -20,3 +28,4 @@ sudo docker run -it --privileged --net=host --mount type=bind,source=/dev/bus/us
 ```
 sudo docker run -it   --privileged   --net=host --mount type=bind,source=/dev/bus/usb,target=/dev/bus/usb   -e DISPLAY=$DISPLAY   -v $HOME/.Xauthority:/root/.Xauthority:ro   -v /run/user/$(id -u):/run/user/$(id -u)   --name leapmotion_$(uuidgen)   leapmotion ultraleap-hand-tracking-control-panel
 ```
+
