@@ -1,6 +1,9 @@
 # leap_motion_ubuntu20
 Run Leap motion controller 2 on Ubuntu 20 via docker
 Step 1: Install docker on ubuntu 20.04.
+```
+https://docs.docker.com/engine/install/ubuntu/
+```
 Step 2: Clone this repository to get the docker file and also leapc python binding if you are intrested in python control.
 ```
 git clone https://github.com/sulemank137/leap_motion_ubuntu20.git
